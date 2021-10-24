@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using StackOverFlow.Models;
 
 namespace StackOverFlow.Data
 {
@@ -12,5 +13,6 @@ namespace StackOverFlow.Data
             : base(options)
         {
         }
+        public DbSet<StackOverFlow.Models.Question> Question { get; set; }
     }
 }
